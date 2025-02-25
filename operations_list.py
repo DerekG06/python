@@ -26,7 +26,7 @@ while True:  # This while True will keep the program running until 0 is entered 
         # Sees if the user's seat is in the available_seats list, and removes it if it is
         if seat in available_seats:
             available_seats.remove(seat)
-            print(f"Seat {seat} successfully purchased!")
+            print(f"Seat {seat} successfully purchased!\n")
 
         # If a number that isn't in the list no matter what, this will be printed
         else:
