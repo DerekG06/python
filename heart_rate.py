@@ -16,13 +16,13 @@ total = 0
 
 # Getting info from the user
 for time in time_slots:
-    user_bpm = int(
+    user_bpm = float(
         input(f"Please enter the heart rate (in BPM) for the {time}: "))
-heart_rates.append([time, user_bpm])
+    heart_rates.append([time, user_bpm])
 
 # Calculating the average and displaying
 for item in range(len(heart_rates)):
     total += heart_rates[item][1]
 
 average = total / len(heart_rates)
-print(f"Average heart rate for today: {average:.1f} BPM")
+print(f"Average heart rate for today: {average:,.2f} BPM")
