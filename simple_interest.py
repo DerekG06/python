@@ -27,6 +27,8 @@ Print the result using an f-string:
 print(f"The simple interest for ${principal:,.2f} at {rate}% over {time} years is ${interest:,.2f}.")
 """
 
+# Here all the previous functions and variables are brought into main(), which is called at the end of the program
+
 
 def main():
     principal, rate, time = get_values()
@@ -34,12 +36,16 @@ def main():
     print(
         f"The simple interest for ${principal:,.2f} at {rate}% over {time} years is ${simple_interest:,.2f}.")
 
+# This function receives the user's inputs and uses them in main() and calculate_interest()
+
 
 def get_values():
     principal = float(input("Enter the principal amount: "))
     rate = float(input("Enter the interest rate: "))
     time = float(input("Enter the time in years: "))
     return principal, rate, time
+
+# Uses the values the user entered in get_values() to calculate the simple interest
 
 
 def calculate_interest(principal, rate, time):
